@@ -24,7 +24,7 @@ if(isset($_POST['signinBtn']) && isset($_POST['UserType'])){
             $Padmin2 = "pogi1234";
             
 
-            if(($_POST['Username'] == $admin1 && $_POST['Password']==$Padmin1))
+        if(($_POST['Username'] == $admin1 && $_POST['Password']==$Padmin1))
             {
                 $_SESSION['Username'] = $admin1;
 
@@ -33,14 +33,14 @@ if(isset($_POST['signinBtn']) && isset($_POST['UserType'])){
                 Welcome to the System: ',$admin1,
                '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> </div>';
             }
-            elseif(($_POST['Username'] == $admin2 && $_POST['Password']==$Padmin2)){
+        elseif(($_POST['Username'] == $admin2 && $_POST['Password']==$Padmin2)){
                     $_SESSION['Username'] = $admin2;
                     echo '<div class="alert alert-success w-20 p-3 mx-auto">
                     welcome to the System: ',$admin2,
                    '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> </div>'; 
-                }
-                else
-                {
+        }
+        else
+        {
                 echo '<div class="alert alert-danger w-20 p-3 mx-auto">
                 You entered the wrong password
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> </div>';
@@ -48,7 +48,7 @@ if(isset($_POST['signinBtn']) && isset($_POST['UserType'])){
             }
 
 
-            if(($Utypevalue == "ContMan")){
+        if(($Utypevalue == "ContMan")){
             
                 $ContMan1 ="pepito";
                 $PcontMan1 ="manaloto";
@@ -56,7 +56,7 @@ if(isset($_POST['signinBtn']) && isset($_POST['UserType'])){
                 $PcontMan2 = "delacruz";
                 
     
-                if(($_POST['Username'] == $ContMan1 && $_POST['Password']==$PcontMan1))
+        if(($_POST['Username'] == $ContMan1 && $_POST['Password']==$PcontMan1))
                 {
                     $_SESSION['Username'] = $ContMan1;
 
@@ -65,28 +65,28 @@ if(isset($_POST['signinBtn']) && isset($_POST['UserType'])){
                     Welcome to the System ',$ContMan1,
                    '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> </div>';
                 }
-                elseif(($_POST['Username'] == $ContMan2 && $_POST['Password']==$PcontMan2)){
+        elseif(($_POST['Username'] == $ContMan2 && $_POST['Password']==$PcontMan2)){
                         $_SESSION['Username'] = $ContMan2;
                         echo '<div class="alert alert-danger w-50 p-3 mx-auto">
                         Welcome to the System ',$ContMan2,
                        '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> </div>'; 
-                    }
-                    else
-                    {
+        }
+        else
+        {
                     echo '<div class="alert alert-danger w-20 p-3 mx-auto">
                     You entered the wrong password
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> </div>';
                     }         
                 }
 
-                if(($Utypevalue == "SystemUs")){
+        if(($Utypevalue == "SystemUs")){
             
                     $SystemUs1 ="pedro";
                     $PSystemUs1 ="penduko";
                     
                     
         
-                    if(($_POST['Username'] == $SystemUs1 && $_POST['Password']==$PSystemUs1))
+        if(($_POST['Username'] == $SystemUs1 && $_POST['Password']==$PSystemUs1))
                     {
                         $_SESSION['Username'] = $SystemUs1;
     
@@ -94,9 +94,9 @@ if(isset($_POST['signinBtn']) && isset($_POST['UserType'])){
                         echo '<div class="alert alert-success w-20 p-3 mx-auto">
                         Welcome to the System ',$SystemUs1,
                        '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> </div>';
-                    }
-                        else
-                        {
+        }
+        else
+        {
                         echo '<div class="alert alert-danger w-20 p-3 mx-auto">
                         You entered the wrong password
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> </div>';
